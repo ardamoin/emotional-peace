@@ -3448,8 +3448,7 @@ input[type="button"].btn-block {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  justify-content: space-between; }
   .navbar > .container,
   .navbar > .container-fluid {
     display: -webkit-box;
@@ -8052,14 +8051,13 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light {
   background: transparent !important;
-  z-index: 3;
-  padding: 10px 0; }
+  z-index: 3; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
       background: #000000 !important;
       position: relative;
       top: 0;
-      padding: 10px 15px; } }
+      padding: 0 15px; } }
   .ftco-navbar-light .navbar-brand {
     color: #000000; }
     .ftco-navbar-light .navbar-brand:hover {
@@ -9805,3 +9803,9 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.book-appointment-btn {
+  @media (max-width: 991.98px) {
+    margin-top: 10px;
+  }
+}
