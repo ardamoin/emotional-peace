@@ -839,20 +839,23 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Check if the device is a mobile device
-        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      // Check if the device is a mobile device
+      function isMobileDevice() {
+        return (
+          typeof window.orientation !== "undefined" ||
+          navigator.userAgent.indexOf("IEMobile") !== -1
+        );
+      }
 
-        // Add event listener for touchmove event on mobile devices
-        if (isMobile) {
-          document.addEventListener(
-            "touchmove",
-            function (e) {
-              // Prevent the default behavior of touchmove, which is scrolling
-              e.preventDefault();
-            },
-            { passive: false }
-          );
+      // Detect scroll event
+      window.addEventListener("scroll", function () {
+        // Check if it's a mobile device and scrolling up
+        if (isMobileDevice() && window.scrollY > this.lastScrollY) {
+          // Scrolling down, update last scroll position
+          this.lastScrollY = window.scrollY;
+        } else if (isMobileDevice()) {
+          // Scrolling up on a mobile device, prevent default behavior
+          window.scrollTo(0, this.lastScrollY);
         }
       });
     </script>
