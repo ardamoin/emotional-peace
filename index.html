@@ -663,7 +663,7 @@
 
     <section
       class="ftco-appointment ftco-section img"
-      style="background-image: url(images/freud.png);"
+      style="background-image: url(images/freud.png)"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -838,6 +838,24 @@
       </svg>
     </div>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Check if the device is a mobile device
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        // Add event listener for touchmove event on mobile devices
+        if (isMobile) {
+          document.addEventListener(
+            "touchmove",
+            function (e) {
+              // Prevent the default behavior of touchmove, which is scrolling
+              e.preventDefault();
+            },
+            { passive: false }
+          );
+        }
+      });
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
