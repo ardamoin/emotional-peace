@@ -134,9 +134,7 @@
             class="col-md-6 img img-3 d-flex justify-content-center align-items-center"
             style="background-image: url(images/semprofile.png)"
           ></div>
-          <div
-            class="col-md-6 wrap-about px-md-5 ftco-animate py-5 bg-light"
-          >
+          <div class="col-md-6 wrap-about px-md-5 ftco-animate py-5 bg-light">
             <div class="heading-section py-md-5">
               <span class="subheading"
                 >Welcome to Emotional Peace Psychotherapy</span
@@ -178,11 +176,46 @@
       </div>
     </section>
 
-    <section
+    <!-- <section
       class="ftco-appointment ftco-section img"
       style="background-image: url(images/your-therapist.png)"
     >
       <div class="overlay"></div>
+    </section>
+ -->
+    <section
+      class="ftco-appointment ftco-section img"
+      style="
+        background-image: url(images/your-therapist-2.png);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 5rem;
+      "
+    >
+      <div class="overlay"></div>
+      <h3
+        style="
+          color: white;
+          text-align: center;
+          font-size: 1.5rem;
+          font-family: serif;
+        "
+      >
+        "Feeling safe to share your evolving story is the true beauty of
+        therapy. Your journey is unique, and I'm here to support you every step
+        of the way."
+      </h3>
+      <p
+        style="
+          color: whitesmoke;
+          text-align: center;
+          font-size: 0.85rem;
+          font-family: serif;
+        "
+      >
+        -Your compassionate therapist
+      </p>
     </section>
 
     <section class="ftco-section">
@@ -662,10 +695,31 @@
 
     <section
       class="ftco-appointment ftco-section img"
-      style="background-image: url(images/freud.png)"
+      style="background-image: url(images/freud-2.png)"
     >
       <div class="overlay"></div>
       <div class="container">
+        <h3
+          style="
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: serif;
+          "
+        >
+          "Out of your vulnerabilities will come your strength."
+        </h3>
+        <p
+          style="
+            color: whitesmoke;
+            text-align: center;
+            font-size: 0.85rem;
+            font-family: serif;
+          "
+        >
+          -Sigmund Freud
+        </p>
+        <br>
         <div class="row">
           <div class="col-md-6 half ftco-animate">
             <h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
@@ -837,7 +891,7 @@
       </svg>
     </div>
 
-    <script>
+    <!-- <script>
       // Check if the device is a mobile device
       function isMobileDevice() {
         return (
@@ -857,6 +911,18 @@
           window.scrollTo(0, this.lastScrollY);
         }
       });
+    </script> -->
+    <script>
+      let contactBtn = document.querySelector('.btn.btn-primary.py-3.px-4');
+      window.addEventListener("resize", function(event) {
+        if (window.innerWidth < 992) {
+          contactBtn.textContent = "Book Online"
+          contactBtn.href = "https://emotionalpeacepsychotherapy.janeapp.com/"
+        } else {
+          contactBtn.textContent = "Contact us"
+          contactBtn.href = "mailto:info@emotionalpeacepsychotherapy.com"
+        }
+      })
     </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
