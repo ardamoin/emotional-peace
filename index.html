@@ -719,7 +719,7 @@
         >
           -Sigmund Freud
         </p>
-        <br>
+        <br />
         <div class="row">
           <div class="col-md-6 half ftco-animate">
             <h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
@@ -891,8 +891,18 @@
       </svg>
     </div>
 
-    <!-- <script>
-      // Check if the device is a mobile device
+    <script>
+      let contactBtn = document.querySelector(".btn.btn-primary.py-3.px-4");
+      window.addEventListener("resize", function (event) {
+        if (window.innerWidth < 992) {
+          contactBtn.textContent = "Book Online";
+          contactBtn.href = "https://emotionalpeacepsychotherapy.janeapp.com/";
+        } else {
+          contactBtn.textContent = "Contact us";
+          contactBtn.href = "mailto:info@emotionalpeacepsychotherapy.com";
+        }
+      });
+
       function isMobileDevice() {
         return (
           typeof window.orientation !== "undefined" ||
@@ -900,29 +910,12 @@
         );
       }
 
-      // Detect scroll event
-      window.addEventListener("scroll", function () {
-        // Check if it's a mobile device and scrolling up
-        if (isMobileDevice() && window.scrollY > this.lastScrollY) {
-          // Scrolling down, update last scroll position
-          this.lastScrollY = window.scrollY;
-        } else if (isMobileDevice()) {
-          // Scrolling up on a mobile device, prevent default behavior
-          window.scrollTo(0, this.lastScrollY);
+      let quoteElems = document.querySelectorAll(".ftco-section.img");
+      if (isMobileDevice()) {
+        for (let i = 0; i < quoteElems.length; i++) {
+          quoteElems[i].style.backgroundAttachment = "initial";
         }
-      });
-    </script> -->
-    <script>
-      let contactBtn = document.querySelector('.btn.btn-primary.py-3.px-4');
-      window.addEventListener("resize", function(event) {
-        if (window.innerWidth < 992) {
-          contactBtn.textContent = "Book Online"
-          contactBtn.href = "https://emotionalpeacepsychotherapy.janeapp.com/"
-        } else {
-          contactBtn.textContent = "Contact us"
-          contactBtn.href = "mailto:info@emotionalpeacepsychotherapy.com"
-        }
-      })
+      }
     </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>

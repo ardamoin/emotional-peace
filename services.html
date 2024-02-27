@@ -359,9 +359,14 @@
       style="background-image: url(images/bg-7.png)"
     >
       <div class="overlay"></div>
-      <div class="container" style="display: flex; justify-content: center; font-family: serif;">
+      <div
+        class="container"
+        style="display: flex; justify-content: center; font-family: serif"
+      >
         <div class="row">
-          <h3 style="color: rgb(75, 13, 13); text-align: center;">Anything that cost you your peace is too expensive</h3>
+          <h3 style="color: rgb(75, 13, 13); text-align: center">
+            Anything that cost you your peace is too expensive
+          </h3>
         </div>
       </div>
     </section>
@@ -470,17 +475,15 @@
                   ><sup>$</sup> <span class="number">200</span>
                   <sub>/90 min</sub></span
                 >
-                <span class="excerpt d-block">Couples' First Session/Intake</span>
+                <span class="excerpt d-block"
+                  >Couples' First Session/Intake</span
+                >
                 <ul class="pricing-text mb-5">
                   <li>
                     <span class="fa fa-check mr-2"></span>Provide Safe Space
                   </li>
-                  <li>
-                    <span class="fa fa-check mr-2"></span>Identify Needs
-                  </li>
-                  <li>
-                    <span class="fa fa-check mr-2"></span>Set Goals
-                  </li>
+                  <li><span class="fa fa-check mr-2"></span>Identify Needs</li>
+                  <li><span class="fa fa-check mr-2"></span>Set Goals</li>
                 </ul>
 
                 <a
@@ -714,6 +717,22 @@
         />
       </svg>
     </div>
+
+    <script>
+      function isMobileDevice() {
+        return (
+          typeof window.orientation !== "undefined" ||
+          navigator.userAgent.indexOf("IEMobile") !== -1
+        );
+      }
+
+      let quoteElems = document.querySelectorAll(".ftco-section.img");
+      if (isMobileDevice()) {
+        for (let i = 0; i < quoteElems.length; i++) {
+          quoteElems[i].style.backgroundAttachment = "initial";
+        }
+      }
+    </script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
