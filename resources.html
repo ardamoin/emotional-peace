@@ -360,11 +360,13 @@
         <div class="container">
           <div class="row">
             <div
+              id="copyright-footer"
               class="col-md-12"
               style="
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                gap: 10px;
               "
             >
               <p class="mb-0" style="color: rgba(255, 255, 255, 0.5)">
@@ -425,6 +427,22 @@
         />
       </svg>
     </div>
+    <script>
+      let copyrightFooter = document.getElementById("copyright-footer");
+      window.addEventListener("resize", function (event) {
+        if (window.innerWidth < 700) {
+          copyrightFooter.style.flexDirection = "column";
+        } else {
+          copyrightFooter.style.flexDirection = "row";
+        }
+      });
+
+      if (window.innerWidth < 700) {
+        copyrightFooter.style.flexDirection = "column";
+      } else {
+        copyrightFooter.style.flexDirection = "row";
+      }
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
