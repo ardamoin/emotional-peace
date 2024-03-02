@@ -263,7 +263,7 @@
           <div class="col-md-6">
             <div class="services-wrap d-flex">
               <div
-                class="img order-md-last"
+                class="img"
                 style="background-image: url(images/online-individual.jpeg)"
               ></div>
               <div class="text">
@@ -285,7 +285,7 @@
           <div class="col-md-6">
             <div class="services-wrap d-flex">
               <div
-                class="img order-md-last"
+                class="img"
                 style="background-image: url(images/online-family.jpeg)"
               ></div>
               <div class="text">
@@ -306,7 +306,7 @@
           <div class="col-md-6">
             <div class="services-wrap d-flex">
               <div
-                class="img"
+                class="img order-md-last"
                 style="background-image: url(images/online-couples-first.jpg)"
               ></div>
               <div class="text">
@@ -329,7 +329,7 @@
           <div class="col-md-6">
             <div class="services-wrap d-flex">
               <div
-                class="img"
+                class="img order-md-last"
                 style="background-image: url(images/online-couples-2.jpg)"
               ></div>
               <div class="text">
@@ -560,8 +560,14 @@
             </div>
           </div>
         </div>
-        <div class="row" style="display: flex; justify-content: end;">
-          <span style="color: gray; font-weight: 400; font-size: small; padding-right: 20px;"
+        <div class="row" style="display: flex; justify-content: end">
+          <span
+            style="
+              color: gray;
+              font-weight: 400;
+              font-size: small;
+              padding-right: 20px;
+            "
             >*session fee + HST extra
             <br />
             *price subject to change</span
@@ -754,9 +760,21 @@
       }
 
       let quoteElems = document.querySelectorAll(".ftco-section.img");
+      let serviceImages = document.querySelectorAll(".services-wrap > .img");
+      let serviceTexts = document.querySelectorAll(".services-wrap > .text");
+      let serviceWraps = document.querySelectorAll(".services-wrap");
+
       if (isMobileDevice()) {
         for (let i = 0; i < quoteElems.length; i++) {
           quoteElems[i].style.backgroundAttachment = "initial";
+        }
+
+        for (let i = 0; i < serviceWraps.length; i++) {
+          serviceWraps[i].style.display = "flex";
+          serviceWraps[i].style.flexDirection = "column";
+          serviceTexts[i].style.width = "100%";
+          serviceImages[i].style.width = "auto";
+          serviceImages[i].style.height = "50vh";
         }
       }
     </script>
