@@ -9814,3 +9814,12 @@ textarea.form-control {
     margin-top: 10px;
   }
 }
+
+@media (max-width: 768px){
+  #profile-pic {
+      background-size: cover;
+      background-position: center;
+      height: 75vh;
+      width: 100%;
+  }
+}
