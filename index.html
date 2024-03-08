@@ -35,6 +35,14 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
   </head>
+  <style>
+    @media screen and (max-width: 768px) {
+      #areas-ul {
+        height: 16.5rem;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
   <body>
     <nav
       class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
@@ -151,15 +159,15 @@
               </p>
 
               <p>
-                I provide online psychotherapy sessions to clients across
-                Ontario via video and telephone, offering a safe space to share,
-                understand, and achieve your goals. I'm passionate about guiding
-                you on your self-growth journey and equipping you with the tools
-                for success.
+                I provide online psychotherapy sessions in both English and
+                Turkish to clients across Ontario via video and telephone,
+                offering a safe space to share, understand, and achieve your
+                goals. I'm passionate about guiding you on your self-growth
+                journey and equipping you with the tools for success.
               </p>
 
               <p>
-                I customize therapeutic modalities to suit your needs, blending
+                I tailor therapeutic modalities to suit your needs, blending
                 various approaches like solution-focused therapy, Cognitive
                 Behavioural Therapy (CBT), and narrative therapy, all delivered
                 with respect and empathy.
@@ -177,13 +185,6 @@
       </div>
     </section>
 
-    <!-- <section
-      class="ftco-appointment ftco-section img"
-      style="background-image: url(images/your-therapist.png)"
-    >
-      <div class="overlay"></div>
-    </section>
- -->
     <section
       class="ftco-appointment ftco-section img"
       style="
@@ -317,6 +318,7 @@
             <ul
               class="nav nav-pills nav-fill d-md-flex d-block flex-column"
               style="overflow-y: scroll"
+              id="areas-ul"
             >
               <li class="nav-item text-left">
                 <a class="nav-link py-4" data-toggle="tab" href="#services-4"
@@ -393,7 +395,7 @@
               </li>
               <li class="nav-item text-left">
                 <a class="nav-link py-4" data-toggle="tab" href="#services-2"
-                  >Couples Counseling</a
+                  >Couples Counselling</a
                 >
               </li>
 
@@ -417,276 +419,310 @@
                   class="img"
                   style="background-image: url(images/services-1.jpg)"
                 ></div>
-                <h3><a href="#">Relationship Issues</a></h3>
-                <p>
-                  Relationship therapy is for any relationship, including
-                  couples, family members, friends, and other relationship
-                  structures. Relationship-related treatment gives you the tools
-                  to overcome emotional distance, lessen misunderstandings, deal
-                  with negative emotions, reestablish meaningful connections,
-                  and increase your comprehension of the root reasons for
-                  unhealthy patterns in your interactions with the people who
-                  matter most to you.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Relationship Issues</a></h3>
+                  <p>
+                    Relationship therapy is for any relationship, including
+                    couples, family members, friends, and other relationship
+                    structures. Relationship-related treatment gives you the tools
+                    to overcome emotional distance, lessen misunderstandings, deal
+                    with negative emotions, reestablish meaningful connections,
+                    and increase your comprehension of the root reasons for
+                    unhealthy patterns in your interactions with the people who
+                    matter most to you.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-2">
                 <div
                   class="img"
                   style="background-image: url(images/services-2.jpg)"
                 ></div>
-                <h3><a href="#">Couples Counseling</a></h3>
-                <p>
-                  Every relationship has its ups and downs. But when things
-                  become stressful or unavoidable, even the smallest issues can
-                  become burdensome for one person or both. Relationship therapy
-                  provides tools to overcome emotional distance, minimize
-                  misunderstandings, address negative emotions, rebuild
-                  meaningful connections, and enhance understanding of
-                  dysfunctional patterns between yourself and those who are
-                  important to you.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Couples Counselling</a></h3>
+                  <p>
+                    Every relationship has its ups and downs. But when things
+                    become stressful or unavoidable, even the smallest issues can
+                    become burdensome for one person or both. Relationship therapy
+                    provides tools to overcome emotional distance, minimize
+                    misunderstandings, address negative emotions, rebuild
+                    meaningful connections, and enhance understanding of
+                    dysfunctional patterns between yourself and those who are
+                    important to you.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-3">
                 <div
                   class="img"
                   style="background-image: url(images/services-5.jpg)"
                 ></div>
-                <h3><a href="#">Depression</a></h3>
-                <p>
-                  Depression is characterized by extreme sadness or hopelessness
-                  lasting more than a few days and impacting individuals in
-                  various ways. It can significantly impair a person's ability
-                  to function in everyday situations. Fortunately, depression is
-                  highly treatable, and therapy can be a potent remedy for its
-                  effects.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Depression</a></h3>
+                  <p>
+                    Depression is characterized by extreme sadness or hopelessness
+                    lasting more than a few days and impacting individuals in
+                    various ways. It can significantly impair a person's ability
+                    to function in everyday situations. Fortunately, depression is
+                    highly treatable, and therapy can be a potent remedy for its
+                    effects.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 active" id="services-4">
                 <div
                   class="img"
                   style="background-image: url(images/anxiety.jpg)"
                 ></div>
-                <h3><a href="#">Anxiety</a></h3>
-                <p>
-                  It's important to know that you don't have to live with
-                  anxiety and fear if you experience panic attacks, obsessive
-                  thoughts, constant worries, or a phobia. Therapy can help and
-                  is often the best way to address many anxiety issues. Therapy
-                  equips you with the tools to overcome anxiety and teaches you
-                  how to utilize them.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Anxiety</a></h3>
+                  <p>
+                    It's important to know that you don't have to live with
+                    anxiety and fear if you experience panic attacks, obsessive
+                    thoughts, constant worries, or a phobia. Therapy can help and
+                    is often the best way to address many anxiety issues. Therapy
+                    equips you with the tools to overcome anxiety and teaches you
+                    how to utilize them.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-5">
                 <div
                   class="img"
                   style="background-image: url(images/adhd.jpg)"
                 ></div>
-                <h3><a href="#">ADHD</a></h3>
-                <p>
-                  Living with attention deficit hyperactivity disorder (ADHD)
-                  can be challenging, as its symptoms can complicate everyday
-                  activities. It's crucial to seek the support necessary to
-                  understand and manage your or your child's condition. Research
-                  suggests that psychotherapy may help alleviate ADHD symptoms,
-                  such as irritability, aggression, difficulty paying attention,
-                  and hyperactivity.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">ADHD</a></h3>
+                  <p>
+                    Living with attention deficit hyperactivity disorder (ADHD)
+                    can be challenging, as its symptoms can complicate everyday
+                    activities. It's crucial to seek the support necessary to
+                    understand and manage your or your child's condition. Research
+                    suggests that psychotherapy may help alleviate ADHD symptoms,
+                    such as irritability, aggression, difficulty paying attention,
+                    and hyperactivity.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-6">
                 <div
                   class="img"
                   style="background-image: url(images/services-6.jpg)"
                 ></div>
-                <h3><a href="#">Chronic Stress & Burnout</a></h3>
-                <p>
-                  Stress can escalate into chronic stress, eventually resulting
-                  in burnout if left untreated. While stress often makes
-                  individuals feel overwhelmed, burnout leaves them feeling
-                  utterly exhausted, with nothing more to give. Therapy offers
-                  strategies to manage and cope with stress symptoms,
-                  potentially preventing burnout.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Chronic Stress & Burnout</a></h3>
+                  <p>
+                    Stress can escalate into chronic stress, eventually resulting
+                    in burnout if left untreated. While stress often makes
+                    individuals feel overwhelmed, burnout leaves them feeling
+                    utterly exhausted, with nothing more to give. Therapy offers
+                    strategies to manage and cope with stress symptoms,
+                    potentially preventing burnout.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-7">
                 <div
                   class="img"
                   style="background-image: url(images/trauma.jpg)"
                 ></div>
-                <h3><a href="#">Trauma</a></h3>
-                <p>
-                  The effects of trauma can deeply impact various aspects of
-                  life, leading to long-term consequences. Trauma therapy offers
-                  support for coping with both one-time events and ongoing
-                  situations. It addresses a wide range of traumas, including
-                  abuse, accidents, and loss, providing a safe space to process
-                  emotions and develop coping skills.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Trauma</a></h3>
+                  <p>
+                    The effects of trauma can deeply impact various aspects of
+                    life, leading to long-term consequences. Trauma therapy offers
+                    support for coping with both one-time events and ongoing
+                    situations. It addresses a wide range of traumas, including
+                    abuse, accidents, and loss, providing a safe space to process
+                    emotions and develop coping skills.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-8">
                 <div
                   class="img"
                   style="background-image: url(images/services-4.jpg)"
                 ></div>
-                <h3><a href="#">Parenting</a></h3>
-                <p>
-                  Parenting is both challenging and rewarding. Therapy provides
-                  guidance for addressing children's emotional, developmental,
-                  and behavioural issues, offering new tools and strategies. It
-                  fosters a stable, supportive family environment, promotes
-                  trusting relationships, facilitates conflict resolution, helps
-                  plan for challenging situations, and supports parental
-                  self-care.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Parenting</a></h3>
+                  <p>
+                    Parenting is both challenging and rewarding. Therapy provides
+                    guidance for addressing children's emotional, developmental,
+                    and behavioural issues, offering new tools and strategies. It
+                    fosters a stable, supportive family environment, promotes
+                    trusting relationships, facilitates conflict resolution, helps
+                    plan for challenging situations, and supports parental
+                    self-care.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-9">
                 <div
                   class="img"
                   style="background-image: url(images/life.jpg)"
                 ></div>
-                <h3><a href="#">Life Transitions</a></h3>
-                <p>
-                  As we navigate life's transitions, many changes can be
-                  challenging and profoundly impactful. Whether it's the
-                  excitement of starting a new job or the loss of a loved one,
-                  transitions can bring stress. How do we understand and cope
-                  with these changes? Psychotherapy offers support to navigate
-                  challenges, easing the transition process.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Life Transitions</a></h3>
+                  <p>
+                    As we navigate life's transitions, many changes can be
+                    challenging and profoundly impactful. Whether it's the
+                    excitement of starting a new job or the loss of a loved one,
+                    transitions can bring stress. How do we understand and cope
+                    with these changes? Psychotherapy offers support to navigate
+                    challenges, easing the transition process.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-10">
                 <div
                   class="img"
                   style="background-image: url(images/family.jpg)"
                 ></div>
-                <h3><a href="#">Family Conflict Resolution</a></h3>
-                <p>
-                  Family is an important support system as everyone needs to
-                  feel supported and loved by their family and relationships.
-                  Family and relationships can include parents, siblings,
-                  grandparents, aunts, uncles, and family friends. Occasionally,
-                  a child might have a conflict with a loved one or could be
-                  experiencing the effects of divorce and being away from a
-                  loved one. For caregivers, it's essential to help a child
-                  identify who they might be having issues with and help resolve
-                  these conflicts.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Family Conflict Resolution</a></h3>
+                  <p>
+                    Family is an important support system as everyone needs to
+                    feel supported and loved by their family and relationships.
+                    Family and relationships can include parents, siblings,
+                    grandparents, aunts, uncles, and family friends. Occasionally,
+                    a child might have a conflict with a loved one or could be
+                    experiencing the effects of divorce and being away from a
+                    loved one. For caregivers, it's essential to help a child
+                    identify who they might be having issues with and help resolve
+                    these conflicts.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-11">
                 <div
                   class="img"
                   style="background-image: url(images/behavior.jpg)"
                 ></div>
-                <h3><a href="#">Behavioural Issues</a></h3>
-                <p>
-                  The main aim of behavioural therapy is to replace
-                  self-defeating behaviours with meaningful and rewarding ones.
-                  It fosters positive self-perception and emotional responses,
-                  reducing conflict and enhancing interpersonal relationships.
-                  Through therapy, individuals learn to manage negative emotions
-                  constructively, gaining control over their reactions.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Behavioural Issues</a></h3>
+                  <p>
+                    The main aim of behavioural therapy is to replace
+                    self-defeating behaviours with meaningful and rewarding ones.
+                    It fosters positive self-perception and emotional responses,
+                    reducing conflict and enhancing interpersonal relationships.
+                    Through therapy, individuals learn to manage negative emotions
+                    constructively, gaining control over their reactions.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-12">
                 <div
                   class="img"
                   style="background-image: url(images/coping.jpg)"
                 ></div>
-                <h3><a href="#">Coping Skills</a></h3>
-                <p>
-                  People handle stress and overwhelming emotions in various
-                  ways. Rather than addressing the issue directly, some may
-                  resort to unhealthy distractions or outlets, like anger
-                  turning into aggression or developing substance addictions.
-                  Therapy offers support in developing positive coping
-                  strategies and tools for healthier management. Through open
-                  discussion, allowing emotions without being overwhelmed, and
-                  focusing on the present, therapy aids in stress management.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Coping Skills</a></h3>
+                  <p>
+                    People handle stress and overwhelming emotions in various
+                    ways. Rather than addressing the issue directly, some may
+                    resort to unhealthy distractions or outlets, like anger
+                    turning into aggression or developing substance addictions.
+                    Therapy offers support in developing positive coping
+                    strategies and tools for healthier management. Through open
+                    discussion, allowing emotions without being overwhelmed, and
+                    focusing on the present, therapy aids in stress management.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-13">
                 <div
                   class="img"
                   style="background-image: url(images/image_3.jpg)"
                 ></div>
-                <h3><a href="#">Self-esteem</a></h3>
-                <p>
-                  Self-esteem is vital for well-being, yet low self-esteem can
-                  cause shame, doubt, and hinder relationships and goals.
-                  Therapy helps by addressing negative self-talk, fostering
-                  self-compassion, and setting achievable goals, leading to
-                  improved self-esteem. It's a journey that takes time and
-                  effort to overcome old patterns, but progress is possible.
-                  Remember, "New things take time to learn." Let's start!
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Self-esteem</a></h3>
+                  <p>
+                    Self-esteem is vital for well-being, yet low self-esteem can
+                    cause shame, doubt, and hinder relationships and goals.
+                    Therapy helps by addressing negative self-talk, fostering
+                    self-compassion, and setting achievable goals, leading to
+                    improved self-esteem. It's a journey that takes time and
+                    effort to overcome old patterns, but progress is possible.
+                    Remember, "New things take time to learn." Let's start!
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-14">
                 <div
                   class="img"
                   style="background-image: url(images/anger.jpg)"
                 ></div>
-                <h3><a href="#">Anger Management</a></h3>
-                <p>
-                  Although anger is a natural human emotion, uncontrolled anger
-                  can quickly become problematic. Therapy can help you recognize
-                  and avoid triggers that provoke anger and provide strategies
-                  to manage sudden outbursts. By examining the thoughts
-                  preceding your anger, you can learn to resolve conflicts more
-                  constructively and mend relationships affected by it.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Anger Management</a></h3>
+                  <p>
+                    Although anger is a natural human emotion, uncontrolled anger
+                    can quickly become problematic. Therapy can help you recognize
+                    and avoid triggers that provoke anger and provide strategies
+                    to manage sudden outbursts. By examining the thoughts
+                    preceding your anger, you can learn to resolve conflicts more
+                    constructively and mend relationships affected by it.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-15">
                 <div
                   class="img"
                   style="background-image: url(images/women.jpg)"
                 ></div>
-                <h3><a href="#">Women's Issues</a></h3>
-                <p>
-                  Women may experience emotional challenges related to gender,
-                  which can significantly impact mental health and overall
-                  well-being. These challenges may encompass anxiety,
-                  depression, disordered eating behaviour, postpartum
-                  depression, domestic violence, sexual abuse, discrimination,
-                  hormonal changes, infertility, and low self-esteem. Choosing
-                  to pursue therapy can be a crucial initial step toward
-                  healing.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Women's Issues</a></h3>
+                  <p>
+                    Women may experience emotional challenges related to gender,
+                    which can significantly impact mental health and overall
+                    well-being. These challenges may encompass anxiety,
+                    depression, disordered eating behaviour, postpartum
+                    depression, domestic violence, sexual abuse, discrimination,
+                    hormonal changes, infertility, and low self-esteem. Choosing
+                    to pursue therapy can be a crucial initial step toward
+                    healing.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-16">
                 <div
                   class="img"
                   style="background-image: url(images/violence.jpg)"
                 ></div>
-                <h3><a href="#">Domestic Violence</a></h3>
-                <p>
-                  Domestic violence encompasses abuse by various household
-                  members and intimate partners, involving physical, sexual,
-                  emotional, or psychological harm. Therapy aids survivors by
-                  restoring self-image, fostering trust, addressing anxieties,
-                  managing guilt and anger, identifying triggers, and treating
-                  associated mental health issues.
-                </p>
+                <div class="area-description-field">
+                  <h3><a href="#">Domestic Violence</a></h3>
+                  <p>
+                    Domestic violence encompasses abuse by various household
+                    members and intimate partners, involving physical, sexual,
+                    emotional, or psychological harm. Therapy aids survivors by
+                    restoring self-image, fostering trust, addressing anxieties,
+                    managing guilt and anger, identifying triggers, and treating
+                    associated mental health issues.
+                  </p>
+                </div>
               </div>
               <div class="tab-pane container p-0 fade" id="services-17">
                 <div
                   class="img"
                   style="background-image: url(images/immigrant.jpg)"
                 ></div>
-                <h3>
-                  <a href="#">Cultural Distress and Immigration Issues</a>
-                </h3>
-                <p>
-                  Acculturation involves individuals, families, or cultural
-                  groups adjusting their original social and cultural values,
-                  ideas, beliefs, and behaviours to align with those of a new
-                  culture. Differences in immigration and acculturation can
-                  impact a person's psychological well-being and overall
-                  adaptation to a new culture and country. It influences various
-                  aspects of life, including language, behaviour, values,
-                  beliefs, and social interactions. We recognize the challenges
-                  of multiculturalism, immigration, and acculturation and are
-                  here to support your adaptation, address your goals, and find
-                  solutions to any difficulties that may arise.
-                </p>
+                <div class="area-description-field">
+                  <h3>
+                    <a href="#">Cultural Distress and Immigration Issues</a>
+                  </h3>
+                  <p>
+                    Acculturation involves individuals, families, or cultural
+                    groups adjusting their original social and cultural values,
+                    ideas, beliefs, and behaviours to align with those of a new
+                    culture. Differences in immigration and acculturation can
+                    impact a person's psychological well-being and overall
+                    adaptation to a new culture and country. It influences various
+                    aspects of life, including language, behaviour, values,
+                    beliefs, and social interactions. We recognize the challenges
+                    of multiculturalism, immigration, and acculturation and are
+                    here to support your adaptation, address your goals, and find
+                    solutions to any difficulties that may arise.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
