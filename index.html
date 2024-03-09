@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/areas.css" />
   </head>
   <style>
     @media screen and (max-width: 768px) {
@@ -41,7 +42,16 @@
         height: 16.5rem;
         margin-bottom: 20px;
       }
+      #areas-table {
+        display: none;
+      }
     }
+
+    @media screen and (min-width: 768px) {
+    .areas-container {
+      display: none;
+    }
+  }
   </style>
   <body>
     <nav
@@ -313,7 +323,384 @@
             <h2 class="mb-3">Areas We Can Help You With</h2>
           </div>
         </div>
-        <div class="row tabulation mt-4 ftco-animate">
+
+        <div class="areas-container">
+          <div class="areas-accordion">
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Anxiety</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/anxiety.jpg" alt="anxiety-img" />
+                  <div class="area-description-field">
+                    <p>
+                      It's important to know that you don't have to live with
+                      anxiety and fear if you experience panic attacks, obsessive
+                      thoughts, constant worries, or a phobia. Therapy can help
+                      and is often the best way to address many anxiety issues.
+                      Therapy equips you with the tools to overcome anxiety and
+                      teaches you how to utilize them.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Depression</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/services-5.jpg" alt="depression-img" />
+                  <div class="area-description-field">
+                    <p>
+                      Depression is characterized by extreme sadness or
+                      hopelessness lasting more than a few days and impacting
+                      individuals in various ways. It can significantly impair a
+                      person's ability to function in everyday situations.
+                      Fortunately, depression is highly treatable, and therapy can
+                      be a potent remedy for its effects.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">ADHD</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/adhd.jpg" alt="adhd-img" />
+                  <div class="area-description-field">
+                    <p>
+                      Living with attention deficit hyperactivity disorder (ADHD)
+                      can be challenging, as its symptoms can complicate everyday
+                      activities. It's crucial to seek the support necessary to
+                      understand and manage your or your child's condition.
+                      Research suggests that psychotherapy may help alleviate ADHD
+                      symptoms, such as irritability, aggression, difficulty
+                      paying attention, and hyperactivity.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title"
+                  >Chronic Stress & Burnout</span
+                >
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/services-6.jpg" alt="stress-img" />
+                  <div class="area-description-field">
+                    <p>
+                      Stress can escalate into chronic stress, eventually
+                      resulting in burnout if left untreated. While stress often
+                      makes individuals feel overwhelmed, burnout leaves them
+                      feeling utterly exhausted, with nothing more to give.
+                      Therapy offers strategies to manage and cope with stress
+                      symptoms, potentially preventing burnout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Life Transitions</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/life.jpg" alt="life-img" />
+                  <div class="area-description-field">
+                    <p>
+                      As we navigate life's transitions, many changes can be
+                      challenging and profoundly impactful. Whether it's the
+                      excitement of starting a new job or the loss of a loved one,
+                      transitions can bring stress. How do we understand and cope
+                      with these changes? Psychotherapy offers support to navigate
+                      challenges, easing the transition process.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Trauma</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/trauma.jpg" alt="trauma-img" />
+                  <div class="area-description-field">
+                    <p>
+                      The effects of trauma can deeply impact various aspects of
+                      life, leading to long-term consequences. Trauma therapy
+                      offers support for coping with both one-time events and
+                      ongoing situations. It addresses a wide range of traumas,
+                      including abuse, accidents, and loss, providing a safe space
+                      to process emotions and develop coping skills.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Behavioural Issues</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/behavior.jpg" alt="behavioural-issues-img" />
+                  <div class="area-description-field">
+                    <p>
+                      The main aim of behavioural therapy is to replace
+                      self-defeating behaviours with meaningful and rewarding
+                      ones. It fosters positive self-perception and emotional
+                      responses, reducing conflict and enhancing interpersonal
+                      relationships. Through therapy, individuals learn to manage
+                      negative emotions constructively, gaining control over their
+                      reactions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Coping Skills</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/coping.jpg" alt="coping-img" />
+                  <div class="area-description-field">
+                    <p>
+                      People handle stress and overwhelming emotions in various
+                      ways. Rather than addressing the issue directly, some may
+                      resort to unhealthy distractions or outlets, like anger
+                      turning into aggression or developing substance addictions.
+                      Therapy offers support in developing positive coping
+                      strategies and tools for healthier management. Through open
+                      discussion, allowing emotions without being overwhelmed, and
+                      focusing on the present, therapy aids in stress management.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Self-esteem</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/image_3.jpg" alt="self-esteem-img" />
+                  <div class="area-description-field">
+                    <p>
+                      Self-esteem is vital for well-being, yet low self-esteem can
+                      cause shame, doubt, and hinder relationships and goals.
+                      Therapy helps by addressing negative self-talk, fostering
+                      self-compassion, and setting achievable goals, leading to
+                      improved self-esteem. It's a journey that takes time and
+                      effort to overcome old patterns, but progress is possible.
+                      Remember, "New things take time to learn." Let's start!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Anger Management</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/anger.jpg" alt="anger-img" />
+                  <div class="area-description-field">
+                    <p>
+                      Although anger is a natural human emotion, uncontrolled
+                      anger can quickly become problematic. Therapy can help you
+                      recognize and avoid triggers that provoke anger and provide
+                      strategies to manage sudden outbursts. By examining the
+                      thoughts preceding your anger, you can learn to resolve
+                      conflicts more constructively and mend relationships
+                      affected by it.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Domestic Violence</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/violence.jpg" alt="domestic-violence-img" />
+                  <div class="area-description-field">
+                    <p>
+                      Domestic violence encompasses abuse by various household
+                      members and intimate partners, involving physical, sexual,
+                      emotional, or psychological harm. Therapy aids survivors by
+                      restoring self-image, fostering trust, addressing anxieties,
+                      managing guilt and anger, identifying triggers, and treating
+                      associated mental health issues.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Parenting</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/services-4.jpg" alt="parenting-img" />
+                  <div class="area-description-field">
+                    <p>
+                      Parenting is both challenging and rewarding. Therapy
+                      provides guidance for addressing children's emotional,
+                      developmental, and behavioural issues, offering new tools
+                      and strategies. It fosters a stable, supportive family
+                      environment, promotes trusting relationships, facilitates
+                      conflict resolution, helps plan for challenging situations,
+                      and supports parental self-care.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title"
+                  >Family Conflict Resolution</span
+                >
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/family.jpg" alt="family-img" />
+                  <div class="area-description-field">
+                    <p>
+                      Family is an important support system as everyone needs to
+                      feel supported and loved by their family and relationships.
+                      Family and relationships can include parents, siblings,
+                      grandparents, aunts, uncles, and family friends.
+                      Occasionally, a child might have a conflict with a loved one
+                      or could be experiencing the effects of divorce and being
+                      away from a loved one. For caregivers, it's essential to
+                      help a child identify who they might be having issues with
+                      and help resolve these conflicts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Relationship Issues</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img
+                    src="./images/services-1.jpg"
+                    alt="relationship-issues-img"
+                  />
+                  <div class="area-description-field">
+                    <p>
+                      Relationship therapy is for any relationship, including
+                      couples, family members, friends, and other relationship
+                      structures. Relationship-related treatment gives you the
+                      tools to overcome emotional distance, lessen
+                      misunderstandings, deal with negative emotions, reestablish
+                      meaningful connections, and increase your comprehension of
+                      the root reasons for unhealthy patterns in your interactions
+                      with the people who matter most to you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Couples Counselling</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/services-2.jpg" alt="couples-img" />
+                  <div class="area-description-field">
+                    <p>
+                      Every relationship has its ups and downs. But when things
+                      become stressful or unavoidable, even the smallest issues
+                      can become burdensome for one person or both. Relationship
+                      therapy provides tools to overcome emotional distance,
+                      minimize misunderstandings, address negative emotions,
+                      rebuild meaningful connections, and enhance understanding of
+                      dysfunctional patterns between yourself and those who are
+                      important to you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title">Women's Issues</span>
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/women.jpg" alt="womens-issues-img" />
+                  <div class="area-description-field">
+                    <p>
+                      Women may experience emotional challenges related to gender,
+                      which can significantly impact mental health and overall
+                      well-being. These challenges may encompass anxiety,
+                      depression, disordered eating behaviour, postpartum
+                      depression, domestic violence, sexual abuse, discrimination,
+                      hormonal changes, infertility, and low self-esteem. Choosing
+                      to pursue therapy can be a crucial initial step toward
+                      healing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="areas-accordion-item">
+              <button id="areas-accordion-button-1" aria-expanded="false">
+                <span class="areas-accordion-title"
+                  >Cultural Distress and Immigration Issues</span
+                >
+              </button>
+              <div class="areas-accordion-content">
+                <div>
+                  <img src="./images/immigrant.jpg" alt="cultural-distress-img" />
+                  <div class="area-description-field">
+                    <p>
+                      Acculturation involves individuals, families, or cultural
+                      groups adjusting their original social and cultural values,
+                      ideas, beliefs, and behaviours to align with those of a new
+                      culture. Differences in immigration and acculturation can
+                      impact a person's psychological well-being and overall
+                      adaptation to a new culture and country. It influences
+                      various aspects of life, including language, behaviour,
+                      values, beliefs, and social interactions. We recognize the
+                      challenges of multiculturalism, immigration, and
+                      acculturation and are here to support your adaptation,
+                      address your goals, and find solutions to any difficulties
+                      that may arise.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row tabulation mt-4 ftco-animate" id="areas-table">
           <div class="col-md-4" style="max-height: 33.5rem; overflow-y: scroll">
             <ul
               class="nav nav-pills nav-fill d-md-flex d-block flex-column"
@@ -424,12 +811,12 @@
                   <p>
                     Relationship therapy is for any relationship, including
                     couples, family members, friends, and other relationship
-                    structures. Relationship-related treatment gives you the tools
-                    to overcome emotional distance, lessen misunderstandings, deal
-                    with negative emotions, reestablish meaningful connections,
-                    and increase your comprehension of the root reasons for
-                    unhealthy patterns in your interactions with the people who
-                    matter most to you.
+                    structures. Relationship-related treatment gives you the
+                    tools to overcome emotional distance, lessen
+                    misunderstandings, deal with negative emotions, reestablish
+                    meaningful connections, and increase your comprehension of
+                    the root reasons for unhealthy patterns in your interactions
+                    with the people who matter most to you.
                   </p>
                 </div>
               </div>
@@ -442,11 +829,11 @@
                   <h3><a href="#">Couples Counselling</a></h3>
                   <p>
                     Every relationship has its ups and downs. But when things
-                    become stressful or unavoidable, even the smallest issues can
-                    become burdensome for one person or both. Relationship therapy
-                    provides tools to overcome emotional distance, minimize
-                    misunderstandings, address negative emotions, rebuild
-                    meaningful connections, and enhance understanding of
+                    become stressful or unavoidable, even the smallest issues
+                    can become burdensome for one person or both. Relationship
+                    therapy provides tools to overcome emotional distance,
+                    minimize misunderstandings, address negative emotions,
+                    rebuild meaningful connections, and enhance understanding of
                     dysfunctional patterns between yourself and those who are
                     important to you.
                   </p>
@@ -460,12 +847,12 @@
                 <div class="area-description-field">
                   <h3><a href="#">Depression</a></h3>
                   <p>
-                    Depression is characterized by extreme sadness or hopelessness
-                    lasting more than a few days and impacting individuals in
-                    various ways. It can significantly impair a person's ability
-                    to function in everyday situations. Fortunately, depression is
-                    highly treatable, and therapy can be a potent remedy for its
-                    effects.
+                    Depression is characterized by extreme sadness or
+                    hopelessness lasting more than a few days and impacting
+                    individuals in various ways. It can significantly impair a
+                    person's ability to function in everyday situations.
+                    Fortunately, depression is highly treatable, and therapy can
+                    be a potent remedy for its effects.
                   </p>
                 </div>
               </div>
@@ -479,10 +866,10 @@
                   <p>
                     It's important to know that you don't have to live with
                     anxiety and fear if you experience panic attacks, obsessive
-                    thoughts, constant worries, or a phobia. Therapy can help and
-                    is often the best way to address many anxiety issues. Therapy
-                    equips you with the tools to overcome anxiety and teaches you
-                    how to utilize them.
+                    thoughts, constant worries, or a phobia. Therapy can help
+                    and is often the best way to address many anxiety issues.
+                    Therapy equips you with the tools to overcome anxiety and
+                    teaches you how to utilize them.
                   </p>
                 </div>
               </div>
@@ -497,10 +884,10 @@
                     Living with attention deficit hyperactivity disorder (ADHD)
                     can be challenging, as its symptoms can complicate everyday
                     activities. It's crucial to seek the support necessary to
-                    understand and manage your or your child's condition. Research
-                    suggests that psychotherapy may help alleviate ADHD symptoms,
-                    such as irritability, aggression, difficulty paying attention,
-                    and hyperactivity.
+                    understand and manage your or your child's condition.
+                    Research suggests that psychotherapy may help alleviate ADHD
+                    symptoms, such as irritability, aggression, difficulty
+                    paying attention, and hyperactivity.
                   </p>
                 </div>
               </div>
@@ -512,12 +899,12 @@
                 <div class="area-description-field">
                   <h3><a href="#">Chronic Stress & Burnout</a></h3>
                   <p>
-                    Stress can escalate into chronic stress, eventually resulting
-                    in burnout if left untreated. While stress often makes
-                    individuals feel overwhelmed, burnout leaves them feeling
-                    utterly exhausted, with nothing more to give. Therapy offers
-                    strategies to manage and cope with stress symptoms,
-                    potentially preventing burnout.
+                    Stress can escalate into chronic stress, eventually
+                    resulting in burnout if left untreated. While stress often
+                    makes individuals feel overwhelmed, burnout leaves them
+                    feeling utterly exhausted, with nothing more to give.
+                    Therapy offers strategies to manage and cope with stress
+                    symptoms, potentially preventing burnout.
                   </p>
                 </div>
               </div>
@@ -530,11 +917,11 @@
                   <h3><a href="#">Trauma</a></h3>
                   <p>
                     The effects of trauma can deeply impact various aspects of
-                    life, leading to long-term consequences. Trauma therapy offers
-                    support for coping with both one-time events and ongoing
-                    situations. It addresses a wide range of traumas, including
-                    abuse, accidents, and loss, providing a safe space to process
-                    emotions and develop coping skills.
+                    life, leading to long-term consequences. Trauma therapy
+                    offers support for coping with both one-time events and
+                    ongoing situations. It addresses a wide range of traumas,
+                    including abuse, accidents, and loss, providing a safe space
+                    to process emotions and develop coping skills.
                   </p>
                 </div>
               </div>
@@ -546,13 +933,13 @@
                 <div class="area-description-field">
                   <h3><a href="#">Parenting</a></h3>
                   <p>
-                    Parenting is both challenging and rewarding. Therapy provides
-                    guidance for addressing children's emotional, developmental,
-                    and behavioural issues, offering new tools and strategies. It
-                    fosters a stable, supportive family environment, promotes
-                    trusting relationships, facilitates conflict resolution, helps
-                    plan for challenging situations, and supports parental
-                    self-care.
+                    Parenting is both challenging and rewarding. Therapy
+                    provides guidance for addressing children's emotional,
+                    developmental, and behavioural issues, offering new tools
+                    and strategies. It fosters a stable, supportive family
+                    environment, promotes trusting relationships, facilitates
+                    conflict resolution, helps plan for challenging situations,
+                    and supports parental self-care.
                   </p>
                 </div>
               </div>
@@ -584,12 +971,12 @@
                     Family is an important support system as everyone needs to
                     feel supported and loved by their family and relationships.
                     Family and relationships can include parents, siblings,
-                    grandparents, aunts, uncles, and family friends. Occasionally,
-                    a child might have a conflict with a loved one or could be
-                    experiencing the effects of divorce and being away from a
-                    loved one. For caregivers, it's essential to help a child
-                    identify who they might be having issues with and help resolve
-                    these conflicts.
+                    grandparents, aunts, uncles, and family friends.
+                    Occasionally, a child might have a conflict with a loved one
+                    or could be experiencing the effects of divorce and being
+                    away from a loved one. For caregivers, it's essential to
+                    help a child identify who they might be having issues with
+                    and help resolve these conflicts.
                   </p>
                 </div>
               </div>
@@ -602,11 +989,12 @@
                   <h3><a href="#">Behavioural Issues</a></h3>
                   <p>
                     The main aim of behavioural therapy is to replace
-                    self-defeating behaviours with meaningful and rewarding ones.
-                    It fosters positive self-perception and emotional responses,
-                    reducing conflict and enhancing interpersonal relationships.
-                    Through therapy, individuals learn to manage negative emotions
-                    constructively, gaining control over their reactions.
+                    self-defeating behaviours with meaningful and rewarding
+                    ones. It fosters positive self-perception and emotional
+                    responses, reducing conflict and enhancing interpersonal
+                    relationships. Through therapy, individuals learn to manage
+                    negative emotions constructively, gaining control over their
+                    reactions.
                   </p>
                 </div>
               </div>
@@ -655,12 +1043,13 @@
                 <div class="area-description-field">
                   <h3><a href="#">Anger Management</a></h3>
                   <p>
-                    Although anger is a natural human emotion, uncontrolled anger
-                    can quickly become problematic. Therapy can help you recognize
-                    and avoid triggers that provoke anger and provide strategies
-                    to manage sudden outbursts. By examining the thoughts
-                    preceding your anger, you can learn to resolve conflicts more
-                    constructively and mend relationships affected by it.
+                    Although anger is a natural human emotion, uncontrolled
+                    anger can quickly become problematic. Therapy can help you
+                    recognize and avoid triggers that provoke anger and provide
+                    strategies to manage sudden outbursts. By examining the
+                    thoughts preceding your anger, you can learn to resolve
+                    conflicts more constructively and mend relationships
+                    affected by it.
                   </p>
                 </div>
               </div>
@@ -715,12 +1104,13 @@
                     ideas, beliefs, and behaviours to align with those of a new
                     culture. Differences in immigration and acculturation can
                     impact a person's psychological well-being and overall
-                    adaptation to a new culture and country. It influences various
-                    aspects of life, including language, behaviour, values,
-                    beliefs, and social interactions. We recognize the challenges
-                    of multiculturalism, immigration, and acculturation and are
-                    here to support your adaptation, address your goals, and find
-                    solutions to any difficulties that may arise.
+                    adaptation to a new culture and country. It influences
+                    various aspects of life, including language, behaviour,
+                    values, beliefs, and social interactions. We recognize the
+                    challenges of multiculturalism, immigration, and
+                    acculturation and are here to support your adaptation,
+                    address your goals, and find solutions to any difficulties
+                    that may arise.
                   </p>
                 </div>
               </div>
@@ -983,5 +1373,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/areas.js"></script>
   </body>
 </html>

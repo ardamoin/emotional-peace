@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
+
+.areas-container {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.areas-accordion-item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #fff;
+
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.areas-accordion .areas-accordion-item button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.areas-accordion .areas-accordion-item button:hover,
+.areas-accordion .areas-accordion-item button:focus {
+  cursor: pointer;
+  /* color: #ae792f; */
+}
+
+.areas-accordion .areas-accordion-item .areas-accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.areas-accordion .areas-accordion-item .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.areas-accordion .areas-accordion-item .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+.areas-accordion .areas-accordion-item .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.areas-accordion .areas-accordion-item button[aria-expanded="true"] {
+  background-color: #ae792f;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.areas-accordion
+  .areas-accordion-item
+  button[aria-expanded="true"]
+  .icon::after {
+  width: 0;
+}
+
+.areas-accordion .areas-accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.areas-accordion
+  .areas-accordion-item
+  button[aria-expanded="true"]
+  + .areas-accordion-content {
+  opacity: 1;
+  max-height: 49em;
+  transition: all 200ms linear;
+}
+
+.areas-accordion-content {
+  padding: 0 30px;
+}
+
+.areas-accordion-content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.areas-accordion-content > div> img {
+    max-width: 300px;
+    max-height: auto;
+}
+
+.areas-accordion .areas-accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
